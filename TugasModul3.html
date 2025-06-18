@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perusahaan Maju Mundur Cantik</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-color: #02de09;
+        --secondary-color: #8cff00;
+        --light-color: #ffffff;
+        --dark-color: #343a40;
+        --text-color: #333;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--text-color);
+        line-height: 1.6;
+      }
+
+      .navbar {
+        background-color: var(--primary-color);
+      }
+
+      .navbar .nav-link {
+        color: var(--light-color) !important;
+        transition: color 0.3s ease;
+      }
+
+      .navbar .nav-link:hover {
+        color: var(--primary-color) !important;
+      }
+
+      .navbar-brand {
+        color: var(--light-color) !important;
+        font-weight: bold;
+      }
+
+      .hero-section {
+        background: linear-gradient(
+            rgba(255, 255, 255, 0.5),
+            rgba(25, 254, 0, 0.5)
+          ),
+          url("https://via.placeholder.com/1500x500/007bff/FFFFFF?text=Background+Hero")
+            no-repeat center center/cover;
+        color: rgb(52, 52, 52);
+        padding: 100px 0;
+        text-align: center;
+      }
+
+      .section-title {
+        color: var(--primary-color);
+        margin-bottom: 40px;
+        font-weight: bold;
+      }
+
+      .table-info th,
+      .table-info td {
+        vertical-align: middle;
+      }
+
+      .card {
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .card-body {
+        padding: 25px;
+      }
+
+      .btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background-color: #b30000; /* Darker shade for hover */
+        border-color: #e6f2ff;
+      }
+
+      footer {
+        background-color: var(--dark-color);
+        color: var(--light-color);
+        padding: 40px 0;
+      }
+
+      footer a {
+        color: var(--light-color);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      footer a:hover {
+        color: var(--primary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">PT. Maju Mundur Cantik Persero</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+      <div class="container">
+        <img
+          src="head.png"
+          class="img-fluid w-200"
+          style="max-height: 350px; object-fit: cover"
+        />
+        <h1>Selamat Datang di PT. Maju Mundur Cantik Persero</h1>
+        <p class="lead">Solusi Inovatif untuk Komedi Anda</p>
+        <a href="#services" class="btn btn-primary btn-lg mt-3"
+          >Lihat Layanan Kami</a
+        >
+      </div>
+    </section>
+
+    <main class="container my-5">
+      <section id="about" class="mb-5">
+        <h2 class="text-center section-title">Tentang Perusahaan Kami</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <p class="text-center mb-4">
+              Kami adalah perusahaan yang berdedikasi untuk menyediakan solusi
+              bagi anda yang susah ketawa. Didirikan dengan daya humoris tingkat
+              tinggi, kami terus berupaya memberikan layanan tawa yang unggul
+              dan bahan komedi berkualitas internasional.
+            </p>
+            <div class="table-responsive">
+              <table class="table table-bordered table-striped table-info">
+                <thead>
+                  <tr>
+                    <th scope="col">Informasi</th>
+                    <th scope="col">Detail</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Nama Perusahaan</td>
+                    <td>PT. Maju Mundur Cantik Persero</td>
+                  </tr>
+                  <tr>
+                    <td>Tahun Berdiri</td>
+                    <td>1950</td>
+                  </tr>
+                  <tr>
+                    <td>Jumlah Karyawan</td>
+                    <td>96+</td>
+                  </tr>
+                  <tr>
+                    <td>Lokasi Kantor</td>
+                    <td>Jl. Benjamin, Kota Bontang Indonesia</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-5" />
+
+      <section id="services" class="mb-5">
+        <h2 class="text-center section-title">Produk & Layanan Kami</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="sule.jpg" class="card-img-top" alt="Web Development" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Slapstick Comedy</h5>
+                <p class="card-text">
+                  Mengandalkan humor visual dan fisik yang berlebihan, seperti
+                  jatuh, terpeleset, tabrakan, atau gerakan tubuh yang konyol.
+                  Seringkali tidak membutuhkan banyak dialog.
+                </p>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="tretan.jpg" class="card-img-top" alt="Mobile Apps" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Satire</h5>
+                <p class="card-text">
+                  Menggunakan humor, ironi, dan sindiran tajam untuk mengkritik
+                  isu-isu sosial, politik, atau budaya yang serius. Tujuannya
+                  bukan hanya membuat tertawa, tetapi juga memprovokasi
+                  pemikiran.
+                </p>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="bolot.png"
+                class="card-img-top"
+                alt="Digital Marketing"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Situational Comedy</h5>
+                <p class="card-text">
+                  Berfokus pada interaksi karakter dalam situasi atau pengaturan
+                  tertentu yang berulang. Humornya berasal dari dinamika antar
+                  karakter dan kejadian sehari-hari yang konyol.
+                </p>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="coki.jpg" class="card-img-top" alt="IT Consulting" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Dark Comedy</h5>
+                <p class="card-text">
+                  Mengangkat tema-tema yang serius, tabu, atau bahkan tragis
+                  (seperti kematian, penyakit, atau kejahatan) dan mengemasnya
+                  menjadi sesuatu yang lucu. Seringkali memancing tawa sekaligus
+                  mengundang refleksi.
+                </p>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="radit.jpg" class="card-img-top" alt="IT Consulting" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Romantic Comedy</h5>
+                <p class="card-text">
+                  Menggabungkan humor dengan kisah cinta yang manis. Ceritanya
+                  berpusat pada hubungan romantis dua karakter utama yang
+                  diwarnai momen lucu, kesalahpahaman, dan biasanya berakhir
+                  bahagia
+                </p>
+
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="suci.jpg" class="card-img-top" alt="IT Consulting" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Stand-up Comedy</h5>
+                <p class="card-text">
+                  Komedian tampil sendiri di atas panggung dan menyampaikan
+                  materi lucu dalam bentuk lelucon, anekdot, atau observasi
+                  langsung kepada penonton..
+                </p>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-5" />
+
+      <section id="contact" class="mb-5">
+        <h2 class="text-center section-title">Hubungi Kami</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <p class="text-center mb-4">
+              Punya jokes yang lucu atau ingin berkolaborasi? Jangan ragu untuk
+              menghubungi kami melalui formulir di bawah ini atau melalui kontak
+              yang tersedia.
+            </p>
+            <form>
+              <div class="mb-3">
+                <label for="namaLengkap" class="form-label">Nama Lengkap</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="namaLengkap"
+                  placeholder="Masukkan nama lengkap Anda"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="nama@contoh.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea
+                  class="form-control"
+                  id="pesan"
+                  rows="5"
+                  placeholder="Tulis pesan Anda di sini..."
+                ></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  Kirim Pesan
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <p>
+              &copy; 2025 PT. Maju Mundur Cantik Persero. All Rights Reserved.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a href="#">Privasi</a></li>
+              <li class="list-inline-item">
+                <a href="#">Syarat & Ketentuan</a>
+              </li>
+              <li class="list-inline-item"><a href="#">Sitemap</a></li>
+            </ul>
+            <div class="mt-2">
+              <a href="#" class="text-light me-2"
+                ><i class="fab fa-facebook fa-lg"></i
+              ></a>
+              <a href="#" class="text-light me-2"
+                ><i class="fab fa-twitter fa-lg"></i
+              ></a>
+              <a href="#" class="text-light me-2"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+              <a href="#" class="text-light"
+                ><i class="fab fa-linkedin fa-lg"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
